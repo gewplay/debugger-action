@@ -1,9 +1,11 @@
-name: Fox
-on: [push]
+name: ssh
+
+on: 
+  push: 
+    - master
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: ssh
-        uses: gewplay/debugger-action@master
-        run: touch /tmp/keep    
+    - name: SSH connection to Actions
+      uses: gewplay/debugger-action@master
