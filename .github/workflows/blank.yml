@@ -3,8 +3,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:  
+    steps:
       - name: ssh
         uses: gewplay/debugger-action@master
-        run: touch /tmp/keepalive
-      
+        run: touch /tmp/keep    
