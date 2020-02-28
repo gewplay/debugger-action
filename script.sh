@@ -23,6 +23,7 @@ fi
 echo Running tmate...
 tmate -S /tmp/tmate.sock new-session -d
 tmate -S /tmp/tmate.sock wait tmate-ready
+touch /tmp/keepalive
 
 # Print connection info
 echo ________________________________________________________________________________
