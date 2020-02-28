@@ -3,8 +3,8 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      
+    steps:  
     - name: Setup tmate session
       uses: gewplay/debugger-action@master
+    - name: keep
       run： touch /tmp/keepalive
