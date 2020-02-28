@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:  
-    - name: Setup tmate session
-      uses: gewplay/debugger-action@master
-    - name: keep
-      run： touch /tmp/keepalive
+      - name: ssh
+        uses: gewplay/debugger-action@master
+        run: touch /tmp/keepalive
+      
